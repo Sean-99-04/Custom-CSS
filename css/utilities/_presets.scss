@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin flex-center(
+  $display: flex,
+  $align: center,
+  $justify: center,
+  $direction: row
+) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin basic-transition(
+  $timing-function: ease,
+  $property: all,
+  $duration: 0.5s
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
