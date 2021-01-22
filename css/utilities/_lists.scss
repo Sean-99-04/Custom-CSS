@@ -25,7 +25,6 @@
     position: relative;
     & > a {
       text-decoration: none;
-      color: black;
     }
   }
   & .dropdown-label {
@@ -62,6 +61,30 @@
     }
   }
 }
+// HTML CODE
+// <ul class="hr__list">
+//   <li><a href="">HOME</a></li>
+//   <li><a href="">ABOUT</a></li>
+//   <li>
+//     <input type="checkbox" id="hr-categories" />
+//     <label class="dropdown-label" for="hr-categories"
+//       ><span>CATEGORIES</span>
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width="12"
+//         height="12"
+//         viewBox="0 0 24 24"
+//       >
+//         <path d="M12 21l-12-18h24z" /></svg
+//     ></label>
+//     <ul class="hr__list--dropdown">
+//       <li>Science</li>
+//       <li>History</li>
+//       <li>Mathematics</li>
+//     </ul>
+//   </li>
+// </ul>
+// END OF HTML CODE
 // ===== END OF HORIZONTAL LIST ===== //
 
 // ===== VERTICAL LIST ===== //
@@ -91,8 +114,12 @@
   border: 1px solid black;
   & > li {
     padding: 4px 12px;
-    padding-left: 0.5em;
+    padding-left: 0.7em;
     position: relative;
+    & span,
+    svg {
+      cursor: pointer;
+    }
     & > a,
     label {
       &::before {
@@ -119,7 +146,6 @@
   }
   & a {
     text-decoration: none;
-    color: black;
   }
 }
 // ===== END OF VERTICAL LIST ===== //

@@ -3,9 +3,9 @@
 // size / width / height / line-thickness / span-1 x-pos / span-1 y-pos / span-3 x-pos / span-3 y-pos /
 $menu-burger-size: (
   "xs" 35px 35px 4px 8px 2px 8px -2px,
-  "small" 40px 40px 5px 11px 2px 11px -2px,
-  "regular" 45px 45px 6px 11px 4px 11px -4px,
-  "large" 50px 50px 7px 11px 6px 11px -6px,
+  "sm" 40px 40px 5px 11px 2px 11px -2px,
+  "md" 45px 45px 6px 11px 4px 11px -4px,
+  "lg" 50px 50px 7px 11px 6px 11px -6px,
   "xl" 55px 55px 8px 11px 8px 11px -8px,
   "2xl" 60px 60px 8px 11px 11px 11px -11px
 );
@@ -15,14 +15,14 @@ $menu-burger-size: (
 {
   .menu-burger-#{$name} {
     @include flex-center($direction: column, $justify: space-around);
-    width: 2rem;
-    height: 2rem;
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 7px;
     padding-right: 7px;
-    width: $width;
-    height: $height;
+    min-width: $width;
+    max-width: $width;
+    min-height: $height;
+    max-height: $height;
     @include basic-transition($duration: 0.7s);
     &:hover {
       cursor: pointer;
@@ -52,7 +52,7 @@ $menu-burger-size: (
 }
 // == THE HTML CODE NEEDED == //
 // <input type="checkbox" id="menu-burger-checkbox" />
-// <label for="menu-burger-checkbox" class="menu-burger-large">
+// <label for="menu-burger-checkbox" class="menu-burger-lg">
 //     <span></span>
 //     <span></span>
 //     <span></span>

@@ -444,7 +444,6 @@ html {
 
 .hr__list > li > a {
   text-decoration: none;
-  color: black;
 }
 
 .hr__list .dropdown-label {
@@ -590,10 +589,5 @@ html {
 
 .vr__list a {
   text-decoration: none;
-  color: black;
-}
-
-body {
-  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
